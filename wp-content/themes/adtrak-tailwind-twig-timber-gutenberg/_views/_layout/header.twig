@@ -1,75 +1,35 @@
-<header class="pt-10 lg:pt-0">
+<header class="header">
+	{% include "_layout/top-bar.twig" %}
 
-	<div class="hidden bg-primary top-bar lg:block">
-
-		<div class="container">
-
-		{# Desktop secondary navigation #}
-
-			<nav id="menu-secondary" class="container hidden menu lg:block" aria-labelledby="secondary-navigation">
-				<span class="sr-only" id="secondary-navigation">Secondary Navigation</span>
-				<ul class="flex flex-wrap justify-center w-full menu-secondary menu-secondary-js">
-					{% for item in secondaryMenu.items %}
-						<li class="{{item.class}}">
-							<a href="{{item.link}}" class="relative text-gray-500 block p-4 hover:text-black focus:text-black {{ item.current ? 'text-red-500' }}">{{item.name}}</a>
-							{% if item.children %}
-								<ul class="sub-menu">
-									{% for child in item.children %}
-										<li class="{{child.class}}">
-											<a class="block p-4 text-gray-500 hover:text-black focus:text-black" href="{{child.link}}">{{child.name}}</a>
-										</li>
-									{% endfor %}
-								</ul>
-							{% endif %}
-						</li>
-					{% endfor %}
-				</ul>
-			</nav>
-
-		</div>
-
-	</div>
-
-	<div class="container flex-wrap items-center justify-between lg:py-4 lg:flex">
-
+	<div class="header-inner container flex items-center justify-between">
 		{# Logo #}
-
 		<a aria-label="Go to homepage" class="block lg:inline-block" href="{{site.site_url}}">
-			<img class="mx-auto max-w-40" src="{{options.site_logo.url}}" alt="{{site.title}} Logo"/>
+			<img class="mx-auto max-w-40 h-8" src="{{options.site_logo.url}}" alt="{{site.title}} Logo"/>
 		</a>
-
-		{# Phone number #}
-		
-		<div class="hidden lg:block">
-			{% do action('ald_default', true) %}
-		</div>
-
-	</div>
-
-	<div class="hidden bg-secondary lg:block">
-
-	{# Desktop primary navigation #}
-
-		<nav id="menu-primary" class="container menu" aria-labelledby="primary-navigation">
+		{# Desktop primary navigation #}
+		<nav id="menu-primary" class="desktop-nav container menu hidden nav:block" aria-labelledby="primary-navigation">
 			<span class="sr-only" id="primary-navigation">Primary Navigation</span>
 			<ul class="flex flex-wrap justify-center w-full menu-primary">
 				{% for item in primaryMenu.items %}
 					<li class="{{item.class}}">
 						<a href="{{item.link}}" class="relative block p-4 hover:text-black focus:text-black {{ item.current ? 'text-red-500' }}">{{item.name}}</a>
-						{% if item.children %}
-							<ul class="sub-menu">
-								{% for child in item.children %}
-									<li class="{{child.class}}">
-										<a href="{{child.link}}" class="block p-4 text-gray-500 hover:text-black focus:text-black">{{child.name}}</a>
-									</li>
-								{% endfor %}
-							</ul>
-						{% endif %}
 					</li>
 				{% endfor %}
 			</ul>
 		</nav>
+		<div class="header-cta flex items-center flex-shrink-0">
+			<div class="hidden md:flex flex-shrink-0 mr-8">
+				{% include "_components/booking-block-small.twig" %}
+			</div>
 
+			<button title="Toggle Mobile Menu" class="w-auto inline-block nav:hidden bg-transparent flex items-center justify-center w-1/2 p-2 text-center bg-primary" data-mobile-menu-toggle>
+				{# {{ function('icon', 'bars') }} #}
+            	<i class="icon fas fa-bars"></i>
+				<span class="ml-2">Menu</span>
+			</button>
+		</div>
+		
 	</div>
 
+	
 </header>

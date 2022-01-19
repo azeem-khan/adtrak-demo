@@ -6,8 +6,16 @@
 @import 'partials/cookies.css';
 @import 'partials/desktop-nav.css';
 @import 'partials/forms.css';
+@import 'partials/header.css';
 @import 'partials/mobile-nav.css';
+@import 'partials/top-bar.css';
 @import 'partials/typography.css';
+
+/* Components */
+@import 'components/booking-block-small.css';
+@import 'components/hero.css';
+@import 'components/kitchens-block.css';
+
 
 @import "tailwindcss/utilities";
 

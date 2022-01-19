@@ -1,0 +1,32 @@
+.booking-block-small {
+    .phone {
+        @apply 
+        text-right
+        mr-8;
+        .icon {
+            @apply
+            text-lg
+            mr-1
+            rotate-90
+            text-gray-400;
+        }
+        a {
+            @apply
+            font-bold;
+            &.phone-link {
+                @apply
+                text-2xl
+                font-primary
+            }
+        }
+        &:hover,
+        &:focus {
+            a,
+            .icon {
+                @apply
+                transition ease-linear
+                text-primary
+            }
+        }
+    }
+}

@@ -12,11 +12,13 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1400px",
+      "nav": "1500px",
       "3xl": "1600px",
       "4xl": "1900px",
     },
     fontFamily: {
-      sans: ["Source Sans Pro", "sans-serif"],
+      body: ["Inter", "sans-serif"],
+      primary: ["Rubik", "sans-serif"],
     },
     filter: {
       none: "none",
@@ -25,14 +27,13 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          light: "#eee",
-          DEFAULT: "#ccc",
-          dark: "#666",
+          DEFAULT: "#FB6C55",
+          dark: "#a41a03",
         },
         secondary: {
-          light: "#f83",
-          DEFAULT: "#d0dfe5",
-          dark: "#c0ced3",
+          light: "#C2C2C2",
+          DEFAULT: "#333333",
+          dark: "#000",
         },
       },
       spacing: {

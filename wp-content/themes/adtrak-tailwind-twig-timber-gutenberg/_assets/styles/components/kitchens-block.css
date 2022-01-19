@@ -1,0 +1,59 @@
+.kitchens-block {
+    @apply pb-20;
+
+    .kitchens-title {
+        @apply 
+        relative 
+        z-10
+        py-12 px-4
+        md:pt-12 md:pr-20 md:pb-20 md:pl-4 
+        3xl:pl-0 
+        bg-white 
+        m-0 
+        text-5xl
+        inline-block;
+    }
+
+    .kitchen {
+        @apply relative block min-h-96 lg:min-h-128;
+        .image, .image picture {
+            @apply block w-full h-full;
+            img {
+                @apply block w-full h-full object-cover;
+            }
+        }
+        .title {
+            @apply
+            absolute
+            bottom-0
+            left-0
+            bg-white
+            z-10
+            px-8
+            py-6
+            w-full
+            lg:w-auto
+            transition-all ease-linear duration-300;
+            h3 {
+                @apply
+                text-3xl
+                flex
+                items-center
+                justify-between
+                mb-1;
+                .icon {
+                    @apply
+                    w-auto
+                    h-auto
+                    ml-4;
+                }
+            }
+            .cpt {
+                @apply
+                text-primary
+                text-xs
+                uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{#
+	Title: Kitchens Block
+	Description: Kitchens Block
+	Category: formatting
+	Icon: cover-image
+	Keywords: kitchens
+	Mode: auto
+	SupportsAlign: center
+	SupportsMode: true
+	SupportsMultiple: false
+#}
+<div class="kitchens-block">
+    <div class="container pl-0">
+        <h2 class="kitchens-title">{{ fields.title }}</h2>
+    </div>
+    <div class="container">
+        <div class="kitchens-grid grid xs:gap-x-8 md:gap-x-12 xl:gap-x-20 gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            {% for post in Post(fields.kitchens) %}
+                <a href="{{ post.url }}" title="See our {{ post.title }} Kitchen" class="kitchen max-w-none sm:max-w-128">
+                    <div class="image">
+                        {% include "_components/picture.twig" with {
+                            source: post.thumbnail.src,
+                            lazyload: true,
+                            breakpoints: {
+                                "1px" : {
+                                    w: 640,
+                                    h: 640,
+                                    crop: 'center'
+                                },
+                            },
+                            img: {
+                                classes: 'lazyload',
+                                w: 640,
+                                h: 640,
+                                crop: 'center',
+                            }
+                        }
+                        %}
+                    </div>
+                    <div class="title">
+                        <h3>
+                            {{ post.title }}
+                            <svg class="icon" width="23" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m16.48 13 6.364-6.364L16.48.273l-.838.824 4.943 4.943H.5v1.193h20.085l-4.943 4.929.838.838Z" fill="#FB6C55"/></svg>
+                        </h3>
+                        <p class="cpt">{{ post.post_type }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 {
   "require": {
     "timber/timber": "^1.16",
-    "palmiak/timber-acf-wp-blocks": "^1.15"
+    "palmiak/timber-acf-wp-blocks": "^1.15",
+    "hellonico/timber-dump-extension": "^1.0"
   }
 }

@@ -3,29 +3,33 @@ Buttons
 --------------------------------------------------- */
 
 .btn {
-  @apply px-4 py-2 transition duration-300 rounded;
+  @apply 
+  py-5 px-8
+  font-body 
+  font-bold
+  transition ease-linear duration-300;
 }
 
 .btn--primary {
   @apply text-white bg-primary;
 
   &:hover {
-    @apply bg-primary-dark;
+    @apply bg-secondary;
   }
 }
 
-.btn-outline--white {
-  @apply text-white border-2 border-white;
+.btn--outline {
+  @apply text-primary border-2 border-primary;
 
   &:hover {
-    @apply text-black bg-white;
+    @apply bg-primary text-white;
   }
 }
 
-.btn-outline--black {
-  @apply text-black border-2 border-black;
+.btn-outline--red {
+  @apply text-white border-2 border-primary;
 
   &:hover {
-    @apply text-white bg-black;
+    @apply bg-primary;
   }
 }

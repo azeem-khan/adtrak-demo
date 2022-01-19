@@ -3,70 +3,70 @@
 
 /* ========================================================================================================================
 
-Register Locations CPT
+Register Kitchens CPT
 
 ======================================================================================================================== */
-// function register_locations() {
+function register_kitchens() {
 
-// 	$labels = array(
-// 		'name'                  => _x( 'Locations', 'Post Type General Name', 'text_domain' ),
-// 		'singular_name'         => _x( 'Location', 'Post Type Singular Name', 'text_domain' ),
-// 		'menu_name'             => __( 'Locations', 'text_domain' ),
-// 		'name_admin_bar'        => __( 'Locations', 'text_domain' ),
-// 		'archives'              => __( 'Location Archives', 'text_domain' ),
-// 		'attributes'            => __( 'Location Attributes', 'text_domain' ),
-// 		'parent_item_colon'     => __( 'Parent Location:', 'text_domain' ),
-// 		'all_items'             => __( 'All Locations', 'text_domain' ),
-// 		'add_new_item'          => __( 'Add New Location', 'text_domain' ),
-// 		'add_new'               => __( 'Add New', 'text_domain' ),
-// 		'new_item'              => __( 'New Location', 'text_domain' ),
-// 		'edit_item'             => __( 'Edit Location', 'text_domain' ),
-// 		'update_item'           => __( 'Update Location', 'text_domain' ),
-// 		'view_item'             => __( 'View Location', 'text_domain' ),
-// 		'view_items'            => __( 'View Locations', 'text_domain' ),
-// 		'search_items'          => __( 'Search Location', 'text_domain' ),
-// 		'not_found'             => __( 'Not found', 'text_domain' ),
-// 		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
-// 		'featured_image'        => __( 'Location Image', 'text_domain' ),
-// 		'set_featured_image'    => __( 'Set location image', 'text_domain' ),
-// 		'remove_featured_image' => __( 'Remove location image', 'text_domain' ),
-// 		'use_featured_image'    => __( 'Use as location image', 'text_domain' ),
-// 		'insert_into_item'      => __( 'Insert into location', 'text_domain' ),
-// 		'uploaded_to_this_item' => __( 'Uploaded to this location', 'text_domain' ),
-// 		'items_list'            => __( 'Locations list', 'text_domain' ),
-// 		'items_list_navigation' => __( 'Locations list navigation', 'text_domain' ),
-// 		'filter_items_list'     => __( 'Filter locations list', 'text_domain' ),
-// 	);
-// 	$rewrite = array(
-// 		'slug'                  => 'locations',
-// 		'with_front'            => false,
-// 		'pages'                 => true,
-// 		'feeds'                 => true,
-// 	);
-// 	$args = array(
-// 		'label'                 => __( 'Location', 'text_domain' ),
-// 		'description'           => __( 'Locations CPT', 'text_domain' ),
-// 		'labels'                => $labels,
-// 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
-// 		'hierarchical'          => false,
-// 		'public'                => true,
-// 		'show_ui'               => true,
-// 		'show_in_menu'          => true,
-// 		'menu_position'         => 5,
-// 		'menu_icon'             => 'dashicons-location',
-// 		'show_in_admin_bar'     => true,
-// 		'show_in_nav_menus'     => true,
-// 		'can_export'            => true,
-// 		'has_archive'           => false,
-// 		'exclude_from_search'   => false,
-// 		'publicly_queryable'    => true,
-// 		'rewrite'               => $rewrite,
-// 		'capability_type'       => 'page',
-// 	);
-// 	register_post_type( 'locations', $args );
+	$labels = array(
+		'name'                  => _x( 'Kitchens', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Kitchen', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Kitchens', 'text_domain' ),
+		'name_admin_bar'        => __( 'Kitchens', 'text_domain' ),
+		'archives'              => __( 'Kitchen Archives', 'text_domain' ),
+		'attributes'            => __( 'Kitchen Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Kitchen:', 'text_domain' ),
+		'all_items'             => __( 'All Kitchens', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Location', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Kitchen', 'text_domain' ),
+		'edit_item'             => __( 'Edit Kitchen', 'text_domain' ),
+		'update_item'           => __( 'Update Kitchen', 'text_domain' ),
+		'view_item'             => __( 'View Kitchen', 'text_domain' ),
+		'view_items'            => __( 'View Kitchens', 'text_domain' ),
+		'search_items'          => __( 'Search Kitchen', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Kitchen Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set kitchen image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove kitchen image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as kitchen image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into kitchen', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this kitchen', 'text_domain' ),
+		'items_list'            => __( 'Kitchens list', 'text_domain' ),
+		'items_list_navigation' => __( 'Kitchens list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Kitchens list', 'text_domain' ),
+	);
+	$rewrite = array(
+		'slug'                  => 'kitchens',
+		'with_front'            => false,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
+	$args = array(
+		'label'                 => __( 'Kitchen', 'text_domain' ),
+		'description'           => __( 'Kitchens CPT', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-food',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => false,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'kitchens', $args );
 
-// }
-// add_action( 'init', 'register_locations', 0 );
+}
+add_action( 'init', 'register_kitchens', 0 );
 
 
 

@@ -1,0 +1,11 @@
+<div class="booking-block-small flex items-center flex-shrink-0">
+    <div class="phone">
+        <p class="text-gray-400 text-lg">Call our showroom</p>
+        <a href="{{options.booking_phone_number}}" target="_blank" rel="noopener" class="phone-link">
+            {# <i class="icon fas fa-phone text-gray"></i> #}
+            {{ function('icon', 'phone') }}
+            {{options.booking_phone_number}}
+        </a>
+    </div>
+    <button href="{{options.booking_link.url}}" target="{{options.booking_link.target}}" class="btn btn--primary">{{options.booking_link.title}}</button>
+</div>

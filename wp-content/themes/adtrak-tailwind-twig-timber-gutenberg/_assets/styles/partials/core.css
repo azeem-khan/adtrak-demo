@@ -2,6 +2,7 @@
 Core
 --------------------------------------------------- */
 
+
 body,
 html {
   min-height: 101%;
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-  @apply font-sans antialiased leading-relaxed text-black;
+  @apply font-body antialiased leading-relaxed text-black;
 }
 
 /* Uses IntersectionObserver to identify when the viewport has scrolled, and then show back to top */

@@ -1,0 +1,78 @@
+.hero {
+    margin-top: var(--header-height);
+    .banner {
+        @apply relative;
+        > .container {
+            @apply md:flex;
+        }
+    }
+    .banner-image {
+        @media(min-width: 1024px) {
+            width: 61vw;
+        }
+        @apply
+        block
+        h-128
+        lg:h-auto
+        lg:absolute
+        top-0
+        left-0
+        bottom-0;
+        picture {
+            @apply block w-full h-full;
+            img {
+                @apply block w-full h-full object-cover;
+            }
+        }
+        img {
+            @apply w-full h-full object-cover;
+        }
+    }
+    .sale-badge {
+        @apply bg-primary text-white font-primary py-10 px-8 absolute top-10 left-auto z-10 text-5xl text-center uppercase;
+        em {
+            @apply block font-primary text-4xl not-italic normal-case;
+        }
+    }
+
+    .banner-content {
+        max-width: 35rem;
+        @apply relative z-10 
+        xs:-mt-20 xs:mx-auto
+        lg:pt-28 lg:ml-auto lg:mr-0  
+        xl:pb-0;
+        .title {
+            @apply bg-white p-4 pt-8 xs:p-10 lg:-ml-28;
+            h1 {
+                width: 16ch;
+                @apply text-3xl 2xs:text-4xl md:text-6xl font-normal;
+            }
+        }
+        .body {
+            @apply bg-white pb-10 px-4 xs:p-10 xs:pt-0 md:pb-32;
+        }
+        .buttons {
+            @apply flex gap-4 flex-wrap;
+        }
+        ul {
+            @apply mb-16;
+            li {
+                @apply relative flex mb-2 text-lg;
+                &:before {
+                    content:"";
+                    margin-top: 0.55rem;
+                    @apply
+                    flex-shrink-0
+                    bg-transparent
+                    inline-block
+                    rounded-full
+                    border
+                    border-black
+                    w-2
+                    h-2
+                    mr-3;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.header {
+	@apply fixed top-0 left-0 bg-white w-full z-50;
+ 	.header-inner {
+		@apply
+		py-6
+		nav:py-12;
+	}
+}
+

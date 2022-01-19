@@ -1,4 +1,4 @@
-<div class="fixed z-50 flex flex-wrap w-full bg-primary lg:hidden">
+<div class="fixed z-50 flex flex-wrap w-full bg-primary nav:hidden">
 
  {#<div class="w-1/2 p-2 text-center bg-gray-500">
     {% do action('ald_default', false) %}
@@ -12,9 +12,6 @@
   {% do action('ald_default', true) %}
 </div>
 
-<button title="Toggle Mobile Menu" class="flex items-center justify-center w-1/2 p-2 text-center bg-primary" data-mobile-menu-toggle>
-  {{ function('icon', 'bars') }}
-  <span class="ml-2">Menu</span>
-</button>
+
 
 </div>

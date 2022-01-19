@@ -1,25 +1,3 @@
-/* ---------------------------------------------------
-Typography
---------------------------------------------------- */
-
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/wp-content/themes/adtrak-tailwind-twig-timber-gutenberg/_assets/fonts/SourceSansPro-Regular.ttf")
-    format("truetype");
-  font-display: swap;
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/wp-content/themes/adtrak-tailwind-twig-timber-gutenberg/_assets/fonts/SourceSansPro-Bold.ttf")
-    format("truetype");
-  font-display: swap;
-  font-weight: 700;
-  font-style: bold;
-}
-
 /* Headings */
 
 h1,
@@ -34,7 +12,10 @@ h5,
 .h5,
 h6,
 .h6 {
-  @apply mb-4 font-bold leading-snug;
+  @apply mb-4 font-bold leading-snug font-light font-primary;
+  em {
+    @apply text-primary;
+  }
 }
 
 h1 {

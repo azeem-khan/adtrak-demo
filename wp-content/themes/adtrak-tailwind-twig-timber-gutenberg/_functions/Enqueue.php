@@ -1,6 +1,7 @@
 <?php 
     add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script('production', get_theme_file_uri() . '/dist/production-dist.js', ['jquery'], '', true);
+        wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
         // Addon scripts that should only be loaded on certain pages...
         // if(is_page(array('page-slug', 'page-slug-2')){
